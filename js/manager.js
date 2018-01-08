@@ -19,10 +19,11 @@ AFRAME.registerComponent('manager', {
     spheres: {type: 'array'},
     maps: {type: 'map'},
     mapVisible: {type: 'bool', default: false},
-    scriptVisible: {type: 'bool', default: false},
+    scriptVisible: {type: 'bool', default: true},
     json: {type: 'map'},
     tour: {type: 'array'},
     hide: {type: 'map', default: {'x': 0, 'y': -200, 'z': 0}},
+    audio: {},
   },
 
   init: function() {
@@ -109,12 +110,14 @@ AFRAME.registerComponent('manager', {
         data.spheres[i].setAttribute('position', connections[connect]);
       }
       i++;
-      // Hide Script
-      el.sceneEl.querySelector("#scriptBubble").setAttribute('position', { "x": 5, "y": 4.5, "z": 8});
-      // if(data.json[data.current]['script'] != "") {
-      //  el.sceneEl.querySelector("#" + data.current + "_sound").components.sound.stopSound();
-      // }
-      data.scriptVisible = false;
+      // Switches Script
+      //el.sceneEl.querySelector("#scriptBubble").setAttribute('position', { "x": 5, "y": 4.5, "z": 8});
+      if(data.json[data.current]['script'] != "") {
+        if(data.audio) {
+          data.audio.pause();
+        }
+      }
+      this.changeScript();
     }
 
     // Send location to Google Analytics using gtag.js and global gtag function
@@ -186,32 +189,42 @@ AFRAME.registerComponent('manager', {
     }
   },
 
-
-
-  changeScript: function() {
+  // Changes Script visibility
+  toggleScript: function() {
     var data = this.data;
     var el = this.el;
-    // Changes Script
     if(data.scriptVisible){
       el.sceneEl.querySelector("#scriptBubble").setAttribute('position', { "x": 5, "y": 4.5, "z": 8});
-      if(data.json[data.current]['script'] != "") {
-        el.sceneEl.querySelector("#" + data.current + "_sound").components.sound.stopSound();
+      if(data.json[data.current]['script'] != "" && data.audio) {
+        data.audio.pause();
       }
       data.scriptVisible = false;
     } else {
-      var script = data.json[data.current]['script'];
-      if(script == "") {
-        script = "You are at " + data.json[data.current]['name'];
-      } else {
-        //el.sceneEl.querySelector("#" + data.current + "_sound").components.sound.playSound();
-      }
-      el.sceneEl.querySelector("#scriptText").setAttribute('text', 'value', script);
+      this.changeScript();
       el.sceneEl.querySelector("#scriptBubble").setAttribute('position', { "x": 5, "y": 4.5, "z": -8});
       data.scriptVisible = true;
     }
   },
 
-
+  // Changes Script and plays voice over audio
+  changeScript: function() {
+    var data = this.data;
+    var el = this.el;
+    // Pause Audio if there is any
+    if(data.audio) {
+      data.audio.pause();
+    }
+    if (data.scriptVisible) {
+      var script = data.json[data.current]['script'];
+      if(script == "") {
+        script = "You are at " + data.json[data.current]['name'];
+      } else {
+        data.audio = new Audio('../audio/' + data.current + '.mp3');
+        data.audio.play();
+      }
+      el.sceneEl.querySelector("#scriptText").setAttribute('text', 'value', script);
+    }
+  },
 
   // Sets up the fade animation for a-sky once
   setupFadeAnim: function() {

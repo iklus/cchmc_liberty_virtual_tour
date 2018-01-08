@@ -1,0 +1,13 @@
+outside_cdbiDoors.jpg 
+outside_flag.jpg 
+outside_g_catStatue.jpg 
+outside_g_chess.jpg 
+outside_g_end.jpg 
+outside_g_entrance.jpg 
+outside_g_fork.jpg 
+outside_g_grass.jpg 
+outside_g_greenStatue.jpg 
+outside_g_ironStatue.jpg 
+outside_g_redStatue.jpg 
+outside_mainEntrance.jpg 
+outside_sidewalk.jpg 

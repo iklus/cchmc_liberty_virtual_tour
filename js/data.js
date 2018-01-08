@@ -120,8 +120,9 @@
           "outside_flag": {x: 83, y: 4, z: 56},
           "outside_g_entrance": {x: 32, y: 6, z: 95},
         },
-        "visits": 0, "script": "This is the main entrance to the proton therapy building.",
+        "visits": 0, "script": "", /*"This is the main entrance to the proton therapy building."*/
       },
+
       
       "outside_sidewalk": {
         "id": "p13", "name": "Sidewalk", "area": "outside",

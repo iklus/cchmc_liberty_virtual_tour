@@ -66,36 +66,31 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="first-slide" src="images/splashpage/campus_carousel.JPG" alt="First slide">
-          <div class="container">
+          <img class="d-block w-100" src="images/splashpage/campus_carousel.JPG" alt="First slide">
             <div class="carousel-caption">
               <h2>Explore Liberty Campus</h2>
               <p>Journey around a virtual version of Cincinnati Children's Liberty Campus.</p>
-              <p><a class="btn btn-lg btn-info" href="https://www.cincinnatichildrens.org/patients/visit/directions/liberty" role="button">Visit Liberty Campus</a></p>
-            </div>
+              <p><a class="btn btn-lg btn-info" href="#instructions" role="button">Visit Liberty Campus</a> <!-- Was href="https://www.cincinnatichildrens.org/patients/visit/directions/liberty -->
+              </p>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="second-slide" src="images/splashpage/cyclotron_carousel.JPG" alt="Second slide">
-          <div class="container">
+          <img class="d-block w-100" src="images/splashpage/cyclotron_carousel.JPG" alt="Second slide">
             <div class="carousel-caption">
               <h2>Go Behind The Scenes</h2>
               <p>View the Cyclotron and other machines that make Proton Therapy work.</p>
-              <p><a class="btn btn-lg btn-info" href="#premade-tours" role="button">Learn About Proton Therapy</a></p>
+              <p><a class="btn btn-lg btn-info" href="#premade-tours" role="button">View a Premade Tour</a></p>
             </div>
-          </div>
         </div>
         <div class="carousel-item">
-          <img class="third-slide" src="images/splashpage/tour_carousel.JPG" alt="Third slide">
-          <div class="container">
+          <img class="d-block w-100" src="images/splashpage/tour_carousel.JPG" alt="Third slide">
             <div class="carousel-caption">
               <h2>Follow a Guided Tour</h2>
               <p>Custom tours are avalable to use and create.  Also, Robbie will give you information about where you are as you navigate throught the campus.</p>
               <p><a class="btn btn-lg btn-info" href="#create-custom" role="button">Create a Custom Tour</a></p>
             </div>
-          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -117,7 +112,7 @@
         </div>
         <div class="col-lg-10">
           <div class="progress">
-            <div id="bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">0%</div>
+            <div id="bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
           </div>
         </div>
       </div>
@@ -152,7 +147,7 @@
       <div class="row featurette">
         <div class="col-md-9">
           <h2 class="dark-text featurette-heading">Instructions:</h2>
-          <p id="test" class="lead">To look around, click and drag anywhere to rotate the camera.  To navigate through the campus just click on any of the purple spheres (like the one on the right) scattered througout.  When you click on on you will travel to that position.</p>
+          <p id="test" class="lead">To look around, click and drag anywhere to rotate the camera.  To navigate through the campus just click on any of the purple spheres (like the one on the right) scattered througout.  When you click on one, you will travel to that position.  When you are ready to begin, click the green Explore Button above.</p>
         </div>
         <div class="col-md-3">
           <img class="featurette-image img-fluid" src="images/splashpage/sphere.JPG" alt="VR Tour Instructions">
@@ -222,14 +217,6 @@
       <img id="location2D" src="images/map/location.png"> <!-- Dimensions 40 X 28 -->
       <img id="current2D" src="images/map/current_location.png"> <!-- Dimensions 81 X 45 -->
       <img id="talk_bubble2D" src="images/ui/talk_bubble.png"> <!-- Dimensions 600 X 435 -->
-
-
-      <!-- Audio -->
-      <audio id="CBDI_1F_Hallway4_audio" src="audio/hallway4.mp3"></audio>
-      <audio id="CBDI_Gantry_Childrens_audio" src="audio/gantry.mp3"></audio>
-      <audio id="CBDI_Gantry_UC_audio" src="audio/gantry.mp3"></audio>
-      <audio id="CBDI_1F_Trees_audio" src="audio/trees.mp3"></audio>
-
 
       <!-- 360 Images -->
         <!-- Outside Images -->
@@ -412,12 +399,6 @@
 
     <!-- 360-degree image. -->
     <a-sky id="image-360" src="#research_gantry360" radius="105"></a-sky>
-
-    <!-- Sound Players -->
-    <a-entity id="CBDI_1F_Hallway4_sound" sound="src: #CBDI_1F_Hallway4_audio"></a-entity>
-    <a-entity id="CBDI_Gantry_Childrens_audio" sound="src: #CBDI_Gantry_Childrens_audio"></a-entity>
-    <a-entity id="CBDI_Gantry_UC_sound" sound="src: #CBDI_Gantry_UC_audio"></a-entity>
-    <a-entity id="CBDI_1F_Trees_sound" sound="src: #CBDI_1F_Trees_audio"></a-entity>
 
     <!-- Camera and Cursor (Player starts off backwards) -->
     <a-entity id="player" position="0 2 0" rotation="0 180 0">

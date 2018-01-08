@@ -74,7 +74,7 @@ function clickMapButton() {
 }
 
 function clickScriptButton() {
-  document.querySelector('a-scene').components.manager.changeScript();
+  document.querySelector('a-scene').components.manager.toggleScript();
 }
 
 function rotateCamera(direction) {
