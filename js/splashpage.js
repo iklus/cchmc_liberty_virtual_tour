@@ -9,7 +9,11 @@ for (i = 0; i < loadingTriggerIDs.length; i++) {
 function loadingBar() {
   var scene = document.querySelector('a-scene');
   if (scene.hasLoaded) {
-    switchToButton();
+    if (getTour()) {
+      hideSplash();
+    } else {
+      switchToButton();
+    }
   } else {
     //scene.addEventListener('loaded', switchToButton());
     var bar = document.getElementById("bar");
