@@ -7,11 +7,11 @@
       "outside_cdbiDoors": {
         "id": "p01", "name": "Building B Enternace", "area": "outside",
         "connections": {
-          "outside_g_entrance": { "x": -62, "y": -2, "z": 79},
-          "outside_mainEntrance": { "x": -85, "y": 0, "z": -53},
-          "outside_flag": { "x": -48.5, "y": -4, "z": -12},
-          "outside_sidewalk": { "x": -1, "y": -4, "z": 48},
-          "CBDI_1F_Gates": { "x": 49.5, "y": -4, "z": 7},
+          "outside_g_entrance": { "x": 73, "y": -2, "z": 68},
+          "outside_mainEntrance": { "x": -45, "y": 0, "z": 89},
+          "outside_flag": { "x": -24, "y": -4, "z": 97},
+          "outside_sidewalk": { "x": 98, "y": -4, "z": 19},
+          "CBDI_1F_Gates": { "x": 15, "y": -4, "z": -99},
         },
         "visits": 0, "script": "Welcome to Cincinnati Children's Liberty Campus.",
       },
@@ -19,10 +19,10 @@
       "outside_flag": {
         "id": "p02", "name": "Flagpole", "area": "outside",
         "connections": {
-          "outside_g_entrance": { "x": -32, "y": 0, "z": 95},
-          "outside_mainEntrance": { "x": -85, "y": 0, "z": -53},
-          "outside_cdbiDoors": { "x": 98, "y": 0, "z": 18},
-          "Main_1F_Gates": { "x": -36, "y": 0, "z": -93},
+          "outside_g_entrance": { "x": 85, "y": 0, "z": 53},
+          "outside_mainEntrance": { "x": -69, "y": 0, "z": 72},
+          "outside_cdbiDoors": { "x": 48, "y": 0, "z": -87},
+          "Main_1F_Gates": { "x": -100, "y": 0, "z": 9},
         },
         "visits": 0, "script": "",
       },
@@ -30,8 +30,8 @@
       "outside_g_chess": {
         "id": "p03", "name": "Chess Board", "area": "outside",
         "connections": {
-          "outside_g_fork": { "x": -15, "y": -8, "z": -47.5},
-          "outside_g_end": { "x": -1, "y": -8, "z": 50},
+          "outside_g_fork": { "x": -97, "y": -8, "z": 24},
+          "outside_g_end": { "x": 99, "y": -8, "z": 16},
         },
         "visits": 0, "script": "",
       },
@@ -39,7 +39,7 @@
       "outside_g_catStatue": {
         "id": "p04", "name": "Cat Statue", "area": "outside",
         "connections": {
-          "outside_g_end": { "x": -21.25, "y": -10, "z": 13.25},
+          "outside_g_end": { "x": -59, "y": -10, "z": 81},
         },
         "visits": 0, "script": "",
       },
@@ -47,10 +47,10 @@
       "outside_g_end": {
         "id": "p05", "name": "Garden Exit", "area": "outside",
         "connections": {
-          "outside_g_chess": { "x": -1, "y": -4, "z": -50},
-          "outside_g_ironStatue": { "x": 34, "y":-2, "z": -94},
-          "outside_g_catStatue": { "x": 18.25, "y": -8, "z": 17},
-          "outside_g_greenStatue": { "x": -19.5, "y": -8, "z": 15.5},
+          "outside_g_chess": { "x": -99, "y": -4, "z": -12},
+          "outside_g_ironStatue": { "x": -80, "y":-2, "z": -60},
+          "outside_g_catStatue": { "x": 75, "y": -8, "z": -66},
+          "outside_g_greenStatue": { "x": 48, "y": -8, "z": 87},
         },
         "visits": 0, "script": "",
       },
@@ -70,8 +70,8 @@
       "outside_g_fork": {
         "id": "p07", "name": "Garden Pathway Fork", "area": "outside",
         "connections": {
-          "outside_g_redStatue": { "x": 36.5, "y": -8, "z": -34},
-          "outside_g_chess": { "x": 24.5, "y": -8, "z": 43.5},
+          "outside_g_redStatue": { "x": -34, "y": -8, "z": -94},
+          "outside_g_chess": { "x": 99, "y": -8, "z": -12},
         },
         "visits": 0, "script": "",
       },
@@ -80,8 +80,8 @@
         "id": "p08", "name": "Garden Pathway", "area": "outside",
         "connections": {
           "outside_g_entrance": { "x": 17.25, "y": -6, "z": -18.25},
-          "outside_g_ironStatue": { "x": 10, "y": -3, "z": 99},
-          "outside_g_redStatue": { "x": -31, "y": -3, "z": 95},
+          "outside_g_ironStatue": { "x": 2, "y": -3, "z": 100},
+          "outside_g_redStatue": { "x": -36, "y": -3, "z": 96},
         },
         "visits": 0, "script": "",
       },
@@ -89,7 +89,7 @@
       "outside_g_greenStatue": {
         "id": "p09", "name": "Green Statue", "area": "outside",
         "connections": {
-          "outside_g_end": { "x": 16.5, "y": -10, "z": -18.75},
+          "outside_g_end": { "x": -62, "y": -10, "z": -79},
         },
         "visits": 0, "script": "",
       },
@@ -97,9 +97,9 @@
       "outside_g_ironStatue": {
         "id": "p10", "name": "Iron Statue", "area": "outside",
         "connections": {
-          "outside_g_redStatue": { "x": -49.5, "y": -8, "z": 6},
-          "outside_g_end": { "x": -15, "y": -2, "z": 99},
-          "outside_g_grass": { "x": -34, "y": -8, "z": -94},
+          "outside_g_redStatue": { "x": -22, "y": -8, "z": 97},
+          "outside_g_end": { "x": 99, "y": -2, "z": 14},
+          "outside_g_grass": { "x": -98, "y": -8, "z": 17},
         },
         "visits": 0, "script": "",
       },
@@ -107,9 +107,9 @@
       "outside_g_redStatue": {
         "id": "p11", "name": "Red Statue", "area": "outside",
         "connections": {
-          "outside_g_ironStatue": { "x": 49.5, "y": -8, "z": -7},
-          "outside_g_fork": { "x": -31, "y": -8, "z": 39},
-          "outside_g_grass": { "x": -7, "y": -4, "z": -100},
+          "outside_g_ironStatue": { "x": 10, "y": -8, "z": -99},
+          "outside_g_fork": { "x": 56, "y": -8, "z": 83},
+          "outside_g_grass": { "x": -97, "y": -4, "z": -22},
         },
         "visits": 0, "script": "",
       },
@@ -117,8 +117,8 @@
       "outside_mainEntrance": {
         "id": "p12", "name": "Front Walkway", "area": "outside",
         "connections": {
-          "outside_flag": {x: 83, y: 4, z: 56},
-          "outside_g_entrance": {x: 32, y: 6, z: 95},
+          "outside_flag": {x:43, y: 0, z: -90},
+          "outside_g_entrance": {x: 86, y: 0, z: -50},
         },
         "visits": 0, "script": "", /*"This is the main entrance to the proton therapy building."*/
       },
@@ -127,9 +127,9 @@
       "outside_sidewalk": {
         "id": "p13", "name": "Sidewalk", "area": "outside",
         "connections": {
-          "outside_cdbiDoors": { "x": 21, "y": 0, "z": -98},
-          "outside_g_entrance": { "x": -75, "y": 0, "z": 66},
-          "outside_flag": { "x": -59, "y": 0, "z": -81},
+          "outside_cdbiDoors": { "x": -54, "y": 0, "z": -84},
+          "outside_g_entrance": { "x": -5, "y": 0, "z": 100},
+          "outside_flag": { "x": -99, "y": 0, "z": -10},
         },
         "visits": 0, "script": "",
       },

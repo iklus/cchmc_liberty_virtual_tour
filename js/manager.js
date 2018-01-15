@@ -114,6 +114,7 @@ AFRAME.registerComponent('manager', {
       //el.sceneEl.querySelector("#scriptBubble").setAttribute('position', { "x": 5, "y": 4.5, "z": 8});
       if(data.json[data.current]['script'] != "") {
         if(data.audio) {
+          alert("pause");
           data.audio.pause();
         }
       }
@@ -196,6 +197,7 @@ AFRAME.registerComponent('manager', {
     if(data.scriptVisible){
       el.sceneEl.querySelector("#scriptBubble").setAttribute('position', { "x": 5, "y": 4.5, "z": 8});
       if(data.json[data.current]['script'] != "" && data.audio) {
+        alert("pause 2");
         data.audio.pause();
       }
       data.scriptVisible = false;
@@ -212,6 +214,7 @@ AFRAME.registerComponent('manager', {
     var el = this.el;
     // Pause Audio if there is any
     if(data.audio) {
+      alert("pause 3");
       data.audio.pause();
     }
     if (data.scriptVisible) {
@@ -219,6 +222,7 @@ AFRAME.registerComponent('manager', {
       if(script == "") {
         script = "You are at " + data.json[data.current]['name'];
       } else {
+        alert("play");
         data.audio = new Audio('../audio/' + data.current + '.mp3');
         data.audio.play();
       }
