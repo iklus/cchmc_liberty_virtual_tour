@@ -223,7 +223,7 @@ AFRAME.registerComponent('manager', {
         script = "You are at " + data.json[data.current]['name'];
       } else {
         alert("play");
-        data.audio = new Audio('../audio/' + data.current + '.mp3');
+        data.audio = new Audio('./audio/' + data.current + '.mp3');
         data.audio.play();
       }
       el.sceneEl.querySelector("#scriptText").setAttribute('text', 'value', script);
