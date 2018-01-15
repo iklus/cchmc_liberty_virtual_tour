@@ -219,11 +219,6 @@ AFRAME.registerComponent('manager', {
       if(script == "") {
         script = "You are at " + data.json[data.current]['name'];
       } else {
-        console.log('test 1');
-        data.audio = new Audio('http://ivankl.us/cchmc_liberty_virtual_tour/audio/' + data.current + '.mp3');
-        console.log('test 2');
-        data.audio = new Audio('../audio/' + data.current + '.mp3');
-        console.log('test 3');
         data.audio = new Audio('audio/' + data.current + '.mp3');
         data.audio.play();
       }
