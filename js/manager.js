@@ -224,6 +224,8 @@ AFRAME.registerComponent('manager', {
       } else {
         alert("play");
         data.audio = new Audio('http://ivankl.us/cchmc_liberty_virtual_tour/audio/' + data.current + '.mp3');
+        data.audio = new Audio('../audio/' + data.current + '.mp3');
+        data.audio = new Audio('~/audio/' + data.current + '.mp3');
         data.audio.play();
       }
       el.sceneEl.querySelector("#scriptText").setAttribute('text', 'value', script);
