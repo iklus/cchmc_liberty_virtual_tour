@@ -81,6 +81,18 @@ function clickScriptButton() {
   document.querySelector('a-scene').components.manager.toggleScript();
 }
 
+function clickSoundButton() {
+  if (document.querySelector('a-scene').components.manager.data.mute) {
+    document.querySelector('a-scene').components.manager.data.mute = false;
+    document.getElementById('menu_sound').src ='images/ui/menu_sound_on.png';
+    document.querySelector('a-scene').components.manager.playSound();
+  } else {
+    document.querySelector('a-scene').components.manager.data.mute = true;
+    document.getElementById('menu_sound').src ='images/ui/menu_sound_off.png';
+    document.querySelector('a-scene').components.manager.pauseSound();
+  }
+}
+
 function rotateCamera(direction) {
   var interval = 5;
   var player = document.querySelector('#mainCamera');

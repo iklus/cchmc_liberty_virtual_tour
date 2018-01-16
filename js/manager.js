@@ -23,6 +23,7 @@ AFRAME.registerComponent('manager', {
     json: {type: 'map'},
     tour: {type: 'array'},
     hide: {type: 'map', default: {'x': 0, 'y': -200, 'z': 0}},
+    mute: {type: 'bool', default: false},
     audio: {},
   },
 
@@ -113,9 +114,7 @@ AFRAME.registerComponent('manager', {
       // Switches Script
       //el.sceneEl.querySelector("#scriptBubble").setAttribute('position', { "x": 5, "y": 4.5, "z": 8});
       if(data.json[data.current]['script'] != "") {
-        if(data.audio) {
-          data.audio.pause();
-        }
+        this.pauseSound();
       }
       this.changeScript();
     }
@@ -196,7 +195,7 @@ AFRAME.registerComponent('manager', {
     if(data.scriptVisible){
       el.sceneEl.querySelector("#scriptBubble").setAttribute('position', { "x": 5, "y": 4.5, "z": 8});
       if(data.json[data.current]['script'] != "" && data.audio) {
-        data.audio.pause();
+        this.pauseSound();
       }
       data.scriptVisible = false;
     } else {
@@ -211,18 +210,32 @@ AFRAME.registerComponent('manager', {
     var data = this.data;
     var el = this.el;
     // Pause Audio if there is any
-    if(data.audio) {
-      data.audio.pause();
-    }
+    this.pauseSound();
     if (data.scriptVisible) {
       var script = data.json[data.current]['script'];
       if(script == "") {
         script = "You are at " + data.json[data.current]['name'];
       } else {
         data.audio = new Audio('audio/' + data.current + '.mp3');
-        data.audio.play();
+        this.playSound();
       }
       el.sceneEl.querySelector("#scriptText").setAttribute('text', 'value', script);
+    }
+  },
+
+  playSound: function() {
+    var data = this.data;
+    var el = this.el;
+    if (data.audio && !data.mute) {
+      data.audio.play();
+    }
+  },
+
+  pauseSound: function() {
+    var data = this.data;
+    var el = this.el;
+    if(data.audio && !data.audio.paused) {
+      data.audio.pause();
     }
   },
 
