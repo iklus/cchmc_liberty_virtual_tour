@@ -245,3 +245,103 @@ nav {
     height: 5vmin;
     width: 5vmin;
 }
+
+@media only screen and (max-width: 500px) {
+  #map_button {
+    position: absolute; 
+    bottom: 10vmin; 
+    border: 0; 
+    left: 4vmin;
+    height: 16vmin;
+    width: 16vmin;
+}
+
+#menu_background {
+    position: absolute;
+    bottom: 4vmin;
+    border: 0;
+    right: 4vmin;
+    height: 28vmin;
+    width: 28vmin;
+}
+
+#menu_arrow_up {
+    position: absolute; 
+    bottom: 22vmin; 
+    border: 0; 
+    right: 14vmin;
+    height: 8vmin;
+    width: 8vmin;
+}
+
+#menu_arrow_right {
+    position: absolute; 
+    bottom: 14vmin; 
+    border: 0; 
+    right: 6vmin;
+    height: 8vmin;
+    width: 8vmin;
+}
+
+#menu_arrow_down {
+    position: absolute; 
+    bottom: 6vmin; 
+    border: 0; 
+    right: 14vmin;
+    height: 8vmin;
+    width: 8vmin;
+}
+
+#menu_arrow_left {
+    position: absolute; 
+    bottom: 14vmin; 
+    border: 0; 
+    right: 22vmin;
+    height: 8vmin;
+    width: 8vmin;
+}
+
+#menu_view {
+    position: absolute; 
+    bottom: 15vmin; 
+    border: 0; 
+    right: 15vmin;
+    height: 6vmin;
+    width: 6vmin;
+}
+
+#menu_robbie {
+    position: absolute; 
+    bottom: 36vmin; 
+    border: 0; 
+    right: 10.5vmin;
+    height: 16vmin;
+    width: 16vmin;
+}
+
+#menu_vr {
+    position: absolute; 
+    bottom: 13vmin; 
+    border: 0; 
+    right: 36vmin;
+    height: 10vmin;
+    width: 10vmin;
+}
+
+#menu_sound {
+    position: absolute;
+    bottom: 13vmin;
+    border: 0;
+    right: 50vmin;
+    height: 10vmin;
+    width: 10vmin;
+}
+#menu_info {
+    position: absolute; 
+    bottom: 13vmin; 
+    border: 0; 
+    right: 64vmin;
+    height: 10vmin;
+    width: 10vmin;
+}
+}
