@@ -43,10 +43,10 @@
       <a class="navbar-brand" href="https://www.cincinnatichildrens.org/"><img src="images/splashpage/childrens-logo.png" alt="Children's Hospital"></a>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="splashpage.html">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
@@ -56,44 +56,42 @@
       </div>
     </nav>
 
-    <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/splashpage/campus_carousel.JPG" alt="First slide">
-            <div class="carousel-caption">
-              <h2>Welcome to the</h2>
-              <h1>Cancer and Blood Diseases Institute's</h1>
-              <h1>Liberty Campus Virtual Tour</h1>
+    <!-- Loading Bar Filler -->
+    <div class="container info">
+      <div id="loadingArea" class="row">
+        <div class="dark-text col-lg-2">
+          <h1>Loading</h1>
+        </div>
+        <div class="col-lg-10">
+          <div class="progress">
+            <div id="bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container info">
+      <!-- About -->
 
-    <div class="row featurette">
-      <div class="col-md-3">
-        <img class="featurette-image img-fluid rounded-circle" src="images/splashpage/sphere.JPG" alt="Cincinnati Children's Liberty Campus">
+      <div class="row featurette">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img class="featurette-image img-fluid" src="images/splashpage/sphere.JPG" alt="Cincinnati Children's Liberty Campus">
+        </div>
+        <div class="col-md-2"></div>
       </div>
-      <div class="col-md-9">
-        <h2 class="dark-text featurette-heading">Meet Robbie, your Tour Guide</h2>
-        <p id="test" class="lead">Hi, I'm Robbie I will be you guide on our journey around Liberty Campus today.  To look around, click and drag anywhere to rotate the camera.  To navigate through the campus just click on any of the purple spheres scattered througout.  When you click on one, you will travel to that position.</p>
-      </div>
-    </div>
-    
-    <hr class="featurette-divider">
 
-    <div class="row">
-      <div class="col-md-6 text-center">
-          <a href="tours.html"><button type="button" class="btn btn-lg btn-success">Take a Tour</button></a>
+      <div class="row featurette">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h2 class="dark-text featurette-heading">Welcome to CBDI VR Tour</h2>
+          <p id="test" class="lead">Located at Interstate 75 and State Route 129, Cincinnati Children's CBDI Liberty Campus brings a new level of specialized pediatric care to one of Greater Cincinnati's fastest-growing regions. Liberty Campus offers a 24/7 emergency department, urgent care, X-rays and imaging, laboratory and testing services, outpatient surgery and comprehensive pediatric medical and surgical specialty clinics.</p>
+        </div>
+        <div class="col-md-2"></div>
+        <a id="create-custom"></a>
       </div>
-      <div class="col-md-6 text-center">
-        <button type="button" class="btn btn-lg btn-success" onClick="hideSplash()">Explore Campus</button>
-      </div>
-    </div>
 
-    <hr class="featurette-divider">
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
 
       <!-- Footer -->
       <footer>
