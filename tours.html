@@ -14,13 +14,8 @@
   <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
   <!-- My scripts -->
   <link rel="stylesheet" href="css/index.css">
-  <script type="text/javascript" src="js/data.js"></script>
-  <script type="text/javascript" src="js/parameters.js"></script>
   <script type="text/javascript" src="js/splashpage.js"></script>
-  <script type="text/javascript" src="js/toggle-visiblity.js"></script>
-  <script type="text/javascript" src="js/manager.js"></script>
-  <script type="text/javascript" src="js/call-switch.js"></script>
-  <script type="text/javascript" src="js/change-map.js"></script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108453755-2"></script>
   <script>
@@ -45,9 +40,6 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="splashpage.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="tours.html">Tours</a>
@@ -132,39 +124,12 @@
 
       <hr class="featurette-divider">
 
-      <!-- Custom Tour -->
-      <div class="row featurette">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-          <h2 class="dark-text featurette-heading">Create a Custom Tour</h2>
-          <p id="test" class="lead">Create your own custom tour to share with friends and family.  First select your starting position and then select all of the spots you would like along your tour.</p>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-
-
-      <!-- Created based on JSON data in data.js -->
-      <form id="cbForm">
-        <div class="col-lg-12 text-center">
-          <button type="button" class="btn btn-info" onClick="createSelections('radio')">Create Custom Tour Link</button>
-        </div>
-      </form> 
-
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <p> </p>
-          <p id=linkArea></p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
+      
 
       <!-- Footer -->
       <footer>
         <p class="float-right"><a href="#">Back to Top</a></p>
-        <p>Created by Cincinnati Children's Hospital Medical Center and Live Well Collaborative</p>
+        <p>Create a <a href="custom.html">Custom Tour</a> (For advanced users only).</p>
       </footer>
 
     </div><!-- /.container -->
