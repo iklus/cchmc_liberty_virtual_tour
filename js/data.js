@@ -470,7 +470,7 @@
           "CBDI_1F_Hallway2": { "x": -25, "y": 0, "z": 97},
           "CBDI_Gantry_ChildrensHallway": { "x": -96, "y": 0, "z": -27},
         },
-        "visits": 0, "script": "This is the entrance to the gantry of the Cincinnati Children's.  A gantry uses a proton beam to destroy kill cancer cells while minimizing damage to surrounding healthy tissue and organs in a process called proton therapy.",
+        "visits": 0, "script": "This is the entrance to the gantry of Cincinnati Children's.  A gantry uses a proton beam to destroy cancer cells while minimizing damage to surrounding healthy tissue and organs in a process called proton therapy.",
       },
 
       "CBDI_Gantry_ChildrensHallway": {
